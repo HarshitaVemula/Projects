@@ -1,7 +1,7 @@
 # Projects
 ## exp1.py
 
-has code to produce precision values i.e. mse_ols/mse_ridge by running simulations.
+1) produce precision values i.e. mse_ols/mse_ridge by running simulations.
 
 ## exp2.py
 
@@ -12,17 +12,17 @@ to be equal to 1)
 
 ## exp3.py
 
-1)Newton raphson was used to optimize betas and lambda at the same time.
+1) Newton raphson was used to optimize betas and lambda at the same time.
 
-2)bias and variance were calculated using formulas
+2) bias and variance were calculated using formulas
 
-3)var(e)=var(ytrain)
+3) var(e)=var(ytrain)
 
 ## exp4.py
 
-1)Newton raphson was used to compute optimal lambda
+1) Newton raphson was used to compute optimal lambda
 
-2)bias and variance are calculated using formulas.
+2) bias and variance are calculated using formulas.
 
-3)var(e)=var(ytrain)
+3) var(e)=var(ytrain)
 
