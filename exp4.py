@@ -66,7 +66,7 @@ def var_der2(U,D,V,y,lambda_):
     return(V@d@V.T)
     
 import math    
-def grad_des(U,D,V,y,X):
+def newton_raphson(U,D,V,y,X):
     lambda_=0
     beta=np.linalg.inv(X.T@X)@X.T@y
     #print('beta',beta)
@@ -123,7 +123,7 @@ lam=[]
 for i in range(100):
     print(i)
     y=y1+np.random.normal(0,1,n)
-    b1,_,j=    grad_des(U,D,V,y,X)
+    b1,_,j=    newton_raphson(U,D,V,y,X)
     print('iterations',j)
     lam.append(_)
     W[i,:]=b1
