@@ -26,3 +26,7 @@ to be equal to 1)
 
 3) var(e)=var(ytrain)
 
+## condition_number.py
+
+1) analyze the effect of correlation and the value of lambda on the condition number of the covariance matrix. 
+
