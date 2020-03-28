@@ -58,7 +58,7 @@ def var_der2(U,D,V,y,lambda_):
     return(V@d@V.T)
     
 import math    
-def grad_des(U,D,V,y,X):
+def newton_raphson(U,D,V,y,X):
     
     epsilon=0.001
     lambda_=1
@@ -127,7 +127,7 @@ y1=np.matmul(X,beta_actual)
 for i in range(100):
     print(i)
     y=y1+np.random.normal(0,1,n)    
-    W[i,:],_=grad_des(U,D,V,y,X)
+    W[i,:],_=newton_raphson(U,D,V,y,X)
     Q[i,:]=np.linalg.inv(X.T@X)@X.T@y
 
 m=np.mean(W,axis=0)
