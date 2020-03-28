@@ -1,7 +1,7 @@
 # Projects
-## exp.py
+## exp1.py
 
-has code to produce precision values i.e. mse_ols/mse_ridge. 
+has code to produce precision values i.e. mse_ols/mse_ridge by running simulations.
 
 ## exp2.py
 
